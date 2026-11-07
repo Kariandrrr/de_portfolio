@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Karina";
+---
+<Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img src="/images/space.webp" alt="Space background" role="presentation" width="300" height="259" decoding="async">
+    </div>
+    <h1>Karina</h1>
+    <span class="badge">Data Engineer</span>
+    <h2>About</h2>
+    <p>
+        What really pulled me into data engineering is that hidden stretch of work nobody sees from the outside.
+    </p>
+    <p>
+        There’s this gap between “okay, the data is in the database” and “the number on the dashboard is actually correct”
+        — and in that gap sit a bunch of small decisions: how you lay out the files, where you do the aggregations, how you check that everything
+        still makes sense. Any one of those choices can either keep the reports solid or completely wreck them, and then you’re stuck digging for
+        a week trying to figure out what went wrong.
+    </p>
+    <p>
+        I like building the layers so you can tear the whole pipeline down and put it back together
+        from zero, check it, and still be able to explain exactly where every single number came from.
+    </p>
+    <p>
+        I work with Python, PostgreSQL, ClickHouse,
+        dbt, Airflow, and S3-compatible storage. And yeah, I actually read the docs and the library source code myself — half the answers are
+        sitting right there.
+    </p>
+
+    <div class="center">
+        <a href="/works/">
+            <button class="btn">My portfolio</button>
+        </a>
+    </div>
+    <h2>Skills</h2>
+    <div class="skills center">
+        <!-- Python -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="Python"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
+            <span class="skill-name">Python</span>
+        </div>
+
+        <!-- Pandas -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="Pandas"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"/>
+            <span class="skill-name">Pandas</span>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="PostgreSQL"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
+            <span class="skill-name">PostgreSQL</span>
+        </div>
+
+        <!-- MySQL -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="MySQL"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"/>
+            <span class="skill-name">MySQL</span>
+        </div>
+
+        <!-- ClickHouse -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="ClickHouse"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/clickhouse/clickhouse-original.svg"/>
+            <span class="skill-name">ClickHouse</span>
+        </div>
+
+        <!-- Apache Airflow -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="Apache Airflow"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apacheairflow/apacheairflow-original.svg"/>
+            <span class="skill-name">Airflow</span>
+        </div>
+
+        <!-- dbt -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="dbt"
+                 src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/dbt.svg"
+                 style="filter: invert(1) brightness(1.2);"/>
+            <span class="skill-name">dbt</span>
+        </div>
+
+        <!-- Apache Spark -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="Apache Spark"
+                 src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg"/>
+            <span class="skill-name">Spark</span>
+        </div>
+
+        <!-- MinIO -->
+        <div class="skill-item">
+            <img class="skills__img" width="46" height="46" alt="MinIO"
+                 src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/minio.svg"
+                 style="filter: invert(1) brightness(1.2);"/>
+            <span class="skill-name">MinIO</span>
+        </div>
+    </div>
+    <h2>Interests</h2>
+    <p>
+        Of all the ways I can spend an evening, I most often choose the one where I get to figure out why people are the way they are.
+    </p>
+    <p>
+        I read popular science — mostly sociology, theology and feminist theory — and what I love most are the places
+        where these views refuse to agree with each other: how religion pulls people into a community and how it also
+        keeps that community tightly controlled, who decided what counts as normal and when, why some explanations of
+        the world last for centuries while others fall apart in ten years.
+    </p>
+    <p>
+        I like that these books never hand you the right answer at the end. They just give you a more honest version of the question.
+    </p>
+    <p>
+        I love foreign languages. For me a language is more of an access key than a skill — every vocabulary carries a way
+        of talking about the world that simply doesn’t occur to you in your native tongue.
+    </p>
+    <p>
+        Sport is the opposite story: there I don’t optimise anything. Just two hours with the phone left in the locker,
+        and somehow afterwards thinking becomes easier.
+    </p>
+</Layout>
+
+

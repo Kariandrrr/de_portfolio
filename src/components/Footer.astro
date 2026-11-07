@@ -1,0 +1,64 @@
+---
+const year = new Date().getFullYear();
+---
+<footer>
+    <div class="center">
+        <ul class="footer">
+            <li class="icon__btn">
+                <a class="icon__link" href="https://github.com/Kariandrrr" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/github.svg" alt="GitHub" width="24" height="24" />
+                </a>
+            </li>
+            <li class="icon__btn">
+                <a class="icon__link" href="mailto:suslovakarina32@gmail.com">
+                    <img src="/images/gmail.svg" alt="Email" width="24" height="24" />
+                </a>
+            </li>
+            <li class="icon__btn">
+                <a class="icon__link" href="https://t.me/Karinka_404" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/tg.svg.webp" alt="Telegram" width="24" height="24" />
+                </a>
+            </li>
+        </ul>
+        <small>&copy; {year} Karina. All Rights Reserved. </small>
+        <div>
+        </div>
+        <small>Template by ttomczak </small>
+    </div>
+</footer>
+
+
+
+<style>
+    .icon__link {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .icon__link img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        gap: 15px;
+    }
+
+    .icon__btn {
+        margin: 0;
+    }
+</style>
