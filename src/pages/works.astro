@@ -2,17 +2,18 @@
 import { getCollection } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const allProjects = await getCollection("projects");
+
+const allProjects = (await getCollection("projects")).sort((a, b) => a.id.localeCompare(b.id));
 const pageTitle = "Works";
+const base = import.meta.env.BASE_URL;
 ---
 <Layout pageTitle={pageTitle}>
     <h2>Projects</h2>
     <ul role="list" class="link-card-grid">
-        {allProjects.map((card) => <Card 
-            url={`/projects/${card.id}/`} 
-            title={card.data.title}
-            body={card.data.description}
+        {allProjects.map((card) => <Card
+                url={`${base}projects/${card.id.replace(/\.mdx?$/, '')}/`}
+                title={card.data.title}
+                body={card.data.description}
         />)}
     </ul>
 </Layout>
-
