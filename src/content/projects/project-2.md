@@ -4,6 +4,7 @@ description: "A database-first design of an academic scheduling system"
 platform: "PostgreSQL · Local"
 stack: PostgreSQL, Python, SQLAlchemy 2.0, Alembic, Pydantic, FastAPI
 github: https://github.com/Kariandrrr/raspishno
+order: 2
 ---
 
 This is a database for university management system. The database layer is done: thirteen entities, every relationship, every constraint, every migration.

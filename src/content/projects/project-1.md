@@ -4,6 +4,7 @@ description: 'How a pandas pipeline on the Olist dataset became a warehouse-shap
 platform: Docker · Local
 stack: Python, dbt, ClickHouse, PostgreSQL, Apache Airflow, MinIO (S3), Metabase, Docker
 github: https://github.com/Kariandrrr/sales_data_lake
+order: 1
 ---
 *How a pandas pipeline on the Olist dataset became a warehouse-shaped project with dbt, ClickHouse and a real orchestration layer.*
 
